@@ -140,7 +140,7 @@
   }
 
   &.inverted {
-    color: lighten($ui-base-color, 33%);
+    color: darken($ui-base-color, 33%);
 
     &:hover,
     &:active,
@@ -175,7 +175,7 @@
 }
 
 .text-icon-button {
-  color: lighten($ui-base-color, 33%);
+  color: black;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -194,7 +194,7 @@
   }
 
   &.disabled {
-    color: lighten($ui-base-color, 13%);
+    color: darken($ui-base-color, 13%);
     cursor: default;
   }
 
@@ -298,10 +298,8 @@
 
 .compose-form__buttons {
   padding: 10px;
-  background: darken($simple-background-color, 8%);
-  box-shadow: inset 0 5px 5px rgba($base-shadow-color, 0.05);
-  border-radius: 0 0 4px 4px;
   display: flex;
+  color: #ed587b;
 
   .icon-button {
     box-sizing: content-box;
@@ -1361,7 +1359,7 @@
 }
 
 .column {
-  width: 330px;
+  width: 430px;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -1593,7 +1591,7 @@
 
 .column-back-button {
   background: darken($ui-base-color, 4%);
-  color: $ui-highlight-color;
+  color: black;
   cursor: pointer;
   flex: 0 0 auto;
   font-size: 16px;
@@ -1609,10 +1607,10 @@
 }
 
 .column-header__back-button {
-  background: darken($ui-base-color, 4%);
+  background-color: #ed587b;
   border: 0;
   font-family: inherit;
-  color: $ui-highlight-color;
+  color: black;
   cursor: pointer;
   flex: 0 0 auto;
   font-size: 16px;
@@ -2172,6 +2170,7 @@ button.icon-button.active i.fa-retweet {
   height: 100%;
   display: flex;
   height: 48px;
+  background-color: #ed587b;
 }
 
 .column-header__button {
