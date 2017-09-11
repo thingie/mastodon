@@ -79,7 +79,7 @@
         font-size: 14px;
 
         .status__relative-time {
-          color: $ui-primary-color;
+          color: $primary-text-color;
         }
       }
     }
@@ -88,7 +88,7 @@
       display: block;
       max-width: 100%;
       padding-right: 25px;
-      color: $ui-base-color;
+      color: $primary-text-color;
     }
 
     .status__avatar {
@@ -118,17 +118,17 @@
 
       strong {
         font-weight: 500;
-        color: $ui-base-color;
+        color: $primary-text-color;
       }
 
       span {
         font-size: 14px;
-        color: $ui-primary-color;
+        color: $primary-text-color;
       }
     }
 
     .status__content {
-      color: $ui-base-color;
+      color: $primary-text-color;
 
       a {
         color: $ui-highlight-color;
@@ -139,7 +139,7 @@
         background: $ui-primary-color;
 
         &:hover {
-          background: lighten($ui-primary-color, 8%);
+          background: darken($ui-primary-color, 8%);
         }
       }
     }
@@ -182,12 +182,12 @@
 
         strong {
           font-weight: 500;
-          color: $ui-base-color;
+          color: $primary-text-color;
         }
 
         span {
           font-size: 14px;
-          color: $ui-primary-color;
+          color: $primary-text-color;
         }
       }
     }
@@ -203,7 +203,7 @@
     }
 
     .status__content {
-      color: $ui-base-color;
+      color: $primary-text-color;
 
       a {
         color: $ui-highlight-color;
@@ -221,7 +221,7 @@
 
     .detailed-status__meta {
       margin-top: 15px;
-      color: $ui-primary-color;
+      color: $primary-text-color;
       font-size: 14px;
       line-height: 18px;
 

@@ -431,7 +431,7 @@
   border-radius: 4px 4px 0 0;
   position: relative;
   bottom: -2px;
-  background: $ui-primary-color;
+  background: $reply-background-color;
   padding: 10px;
 }
 
@@ -446,7 +446,7 @@
 }
 
 .reply-indicator__display-name {
-  color: $ui-base-color;
+  color: $reply-text-color;
   display: block;
   max-width: 100%;
   line-height: 24px;
@@ -494,7 +494,7 @@
       text-decoration: underline;
 
       .fa {
-        color: lighten($ui-base-color, 40%);
+        color: _linkify-color($primary-text-color);
       }
     }
 
@@ -509,15 +509,15 @@
     }
 
     .fa {
-      color: lighten($ui-base-color, 30%);
+      color: _linkify-color($primary-text-color);
     }
   }
 
   .status__content__spoiler-link {
-    background: lighten($ui-base-color, 30%);
+    background: $classic-secondary-color;
 
     &:hover {
-      background: lighten($ui-base-color, 33%);
+      background: lighten($classic-secondary-color, 15%);
       text-decoration: none;
     }
   }
@@ -536,7 +536,7 @@
   border-radius: 2px;
   background: transparent;
   border: 0;
-  color: lighten($ui-base-color, 8%);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 11px;
   padding: 0 6px;
@@ -555,7 +555,7 @@
   padding-left: 68px;
   position: relative;
   min-height: 48px;
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
+  border-bottom: 1px solid $border-color;
   cursor: default;
 
   @keyframes fade {
@@ -567,45 +567,45 @@
   animation: fade 150ms linear;
 
   &.status-direct {
-    background: lighten($ui-base-color, 8%);
+    background: darken($ui-base-color, 8%);
 
     .icon-button.disabled {
-      color: lighten($ui-base-color, 16%);
+      color: darken($ui-base-color, 16%);
     }
   }
 
   &.light {
     .status__relative-time {
-      color: $ui-primary-color;
+      color: $secondary-text-color;
     }
 
     .status__display-name {
-      color: $ui-base-color;
+      color: $secondary-text-color;
     }
 
     .display-name {
       strong {
-        color: $ui-base-color;
+        color: $secondary-text-color;
       }
 
       span {
-        color: $ui-primary-color;
+        color: $secondary-text-color;
       }
     }
 
     .status__content {
-      color: $ui-base-color;
+      color: $primary-text-color;
 
       a {
-        color: $ui-highlight-color;
+        color: _linkify-color($primary-text-color);
       }
 
       a.status__content__spoiler-link {
         color: $primary-text-color;
-        background: $ui-primary-color;
+        background: $ui-highlight-color;
 
         &:hover {
-          background: lighten($ui-primary-color, 8%);
+          background: lighten($ui-highlight-color, 8%);
         }
       }
     }
@@ -617,7 +617,7 @@
     background: transparent;
 
     .icon-button.disabled {
-      color: lighten($ui-base-color, 13%);
+      color: darken($ui-base-color, 13%);
     }
   }
 }
@@ -766,11 +766,11 @@
 }
 
 .reply-indicator__content {
-  color: $ui-base-color;
+  color: $black;
   font-size: 14px;
 
   a {
-    color: lighten($ui-base-color, 20%);
+    color: darken($classic-highlight-color, 20%);
   }
 }
 
@@ -1096,10 +1096,10 @@
 
   a.status__content__spoiler-link {
     background: $ui-base-lighter-color;
-    color: lighten($ui-base-color, 4%);
+    color: darken($ui-base-color, 4%);
 
     &:hover {
-      background: lighten($ui-base-color, 29%);
+      background: darken($ui-base-color, 29%);
       text-decoration: none;
     }
   }
@@ -1110,7 +1110,7 @@
   padding: 8px 0;
   padding-bottom: 0;
   cursor: default;
-  color: $ui-primary-color;
+  color: $primary-text-color;
   font-size: 15px;
   position: relative;
 
@@ -1480,7 +1480,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: lighten($ui-base-color, 13%);
+  background: darken($ui-base-color, 13%);
   box-sizing: border-box;
   padding: 0;
   display: flex;
@@ -1496,7 +1496,7 @@
 }
 
 .pseudo-drawer {
-  background: lighten($ui-base-color, 13%);
+  background: darken($ui-base-color, 13%);
   font-size: 13px;
   text-align: left;
 }
@@ -1504,7 +1504,7 @@
 .drawer__header {
   flex: 0 0 auto;
   font-size: 16px;
-  background: lighten($ui-base-color, 8%);
+  background: darken($ui-base-color, 8%);
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -1513,7 +1513,7 @@
     transition: background 100ms ease-in;
 
     &:hover {
-      background: lighten($ui-base-color, 3%);
+      background: darken($ui-base-color, 3%);
       transition: background 200ms ease-out;
     }
   }
@@ -1521,7 +1521,7 @@
 
 .tabs-bar {
   display: flex;
-  background: lighten($ui-base-color, 8%);
+  background: darken($ui-base-color, 8%);
   flex: 0 0 auto;
   overflow-y: auto;
 }
@@ -1535,7 +1535,7 @@
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  border-bottom: 2px solid lighten($ui-base-color, 8%);
+  border-bottom: 2px solid darken($ui-base-color, 8%);
   transition: all 200ms linear;
 
   .fa {
@@ -1552,7 +1552,7 @@
   &:focus,
   &:active {
     @media screen and (min-width: 1025px) {
-      background: lighten($ui-base-color, 14%);
+      background: darken($ui-base-color, 14%);
       transition: all 100ms linear;
     }
   }
@@ -1592,7 +1592,7 @@
 }
 
 .column-back-button {
-  background: lighten($ui-base-color, 4%);
+  background: darken($ui-base-color, 4%);
   color: $ui-highlight-color;
   cursor: pointer;
   flex: 0 0 auto;
@@ -1609,7 +1609,7 @@
 }
 
 .column-header__back-button {
-  background: lighten($ui-base-color, 4%);
+  background: darken($ui-base-color, 4%);
   border: 0;
   font-family: inherit;
   color: $ui-highlight-color;
@@ -1694,7 +1694,7 @@
 }
 
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: lighten($ui-highlight-color, 10%);
+  background-color: darken($ui-highlight-color, 10%);
 }
 
 .react-toggle-track-check {
@@ -1792,7 +1792,7 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  color: $ui-base-color;
+  color: $primary-text-color;
   background: $simple-background-color;
   padding: 10px;
   font-family: inherit;

@@ -27,3 +27,14 @@ $ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkes
 $ui-primary-color: $classic-primary-color !default;            // Lighter
 $ui-secondary-color: $classic-secondary-color !default;        // Lightest
 $ui-highlight-color: $classic-highlight-color !default;        // Vibrant
+
+// new variables put to a single place
+$reply-background-color: $classic-secondary-color;
+$reply-text-color: $primary-text-color;
+$border-color: darken($ui-base-color, 20%);
+$secondary-text-color: lighten($primary-text-color, 20%);
+
+// some functions to use
+@function _linkify-color($color) {
+    @return lighten($color, 15%);
+}
