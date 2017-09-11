@@ -2174,15 +2174,15 @@ button.icon-button.active i.fa-retweet {
 }
 
 .column-header__button {
-  background: lighten($ui-base-color, 4%);
+  background-color: #ed587b;
   border: 0;
-  color: $ui-primary-color;
+  color: black;
   cursor: pointer;
   font-size: 16px;
   padding: 0 15px;
 
   &:hover {
-    color: lighten($ui-primary-color, 7%);
+    color: lighten(black, 7%);
   }
 
   &.active {
